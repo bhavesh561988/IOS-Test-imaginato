@@ -8,4 +8,17 @@
 
 import Foundation
 import UIKit
+import SVProgressHUD
 
+
+// MARK: - UIViewController Extension
+
+extension UIViewController{
+    func showHUD() {
+        SVProgressHUD.show()
+    }
+    
+    func HideHUD() {
+        SVProgressHUD.dismiss()
+    }
+}

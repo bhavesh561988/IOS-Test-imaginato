@@ -71,8 +71,10 @@ extension MyDiaryViewController{
             UIAlertController.showAlertWithOkButton(self, aStrMessage:R.string.localizable.internet_error() , aStrTitle: "Networkerror", completion: nil)
         }
         else{
+            self.showHUD()
             APIManager.shared.APICallGetMyDiary() { (statuscode) in
                 print(statuscode)
+                self.HideHUD()
             }
         }
     }

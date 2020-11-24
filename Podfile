@@ -16,5 +16,7 @@ target 'MyDiary' do
   pod 'RealmSwift'
   
   pod "RxRealm"
+  
+  pod 'IQKeyboardManagerSwift'
 
 end

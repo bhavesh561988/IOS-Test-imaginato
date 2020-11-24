@@ -56,7 +56,7 @@ class EditDiaryViewController: UIViewController {
 
 extension EditDiaryViewController{
     @IBAction func onClickSave(_ sender: Any) {
-        
+        self.view.endEditing(true)
         if isValidate() {
             RealmManager.shared.write {
                 self.dicdiary?.title = "Test"
