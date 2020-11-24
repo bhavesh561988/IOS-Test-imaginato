@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (5.2.2)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - Realm (5.5.0):
+    - Realm/Headers (= 5.5.0)
+  - Realm/Headers (5.5.0)
+  - RealmSwift (5.5.0):
+    - Realm (= 5.5.0)
+  - RxRealm (3.1.0):
+    - RealmSwift (~> 5.2)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.1.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - R.swift
+  - RealmSwift
+  - RxRealm
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - RxRealm
+    - RxSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  Realm: fb399d76f44042e5cdfc630f33828fdb4d077345
+  RealmSwift: 3b7e62356207ef16d34de4e55d475163bd2062bb
+  RxRealm: 50e5fe5c1f22518205afbb313fbc5580d73bc586
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: c13baf094dc1ca7bd2db502e85c40051a4dc0b7b
+
+COCOAPODS: 1.9.3

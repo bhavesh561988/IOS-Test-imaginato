@@ -3,27 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E7EA565EE4C87802310D32E /* Pods_MyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A92CA23D94502766AE1E891 /* Pods_MyDiary.framework */; };
 		562798E5256CC8F800710662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798E4256CC8F800710662 /* AppDelegate.swift */; };
-		562798E7256CC8F800710662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798E6256CC8F800710662 /* SceneDelegate.swift */; };
-		562798E9256CC8F800710662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798E8256CC8F800710662 /* ViewController.swift */; };
 		562798EC256CC8F800710662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562798EA256CC8F800710662 /* Main.storyboard */; };
 		562798EE256CC8FD00710662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562798ED256CC8FD00710662 /* Assets.xcassets */; };
 		562798F1256CC8FD00710662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562798EF256CC8FD00710662 /* LaunchScreen.storyboard */; };
+		562798FB256CCFD200710662 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798FA256CCFD200710662 /* R.generated.swift */; };
+		562798FE256CDE3200710662 /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798FD256CDE3200710662 /* CommonStruct.swift */; };
+		56279900256CDE5000710662 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562798FF256CDE5000710662 /* Constant.swift */; };
+		56279902256CE8C500710662 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279901256CE8C500710662 /* APIManager.swift */; };
+		56279904256CEA5200710662 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279903256CEA5200710662 /* Enum.swift */; };
+		56279906256CECC300710662 /* RealmDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279905256CECC300710662 /* RealmDiary.swift */; };
+		56279908256D034600710662 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279907256D034600710662 /* CommonFunctions.swift */; };
+		5627990E256D052300710662 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627990D256D052300710662 /* Date+Extension.swift */; };
+		56279910256D086500710662 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627990F256D086500710662 /* String+Extension.swift */; };
+		56279912256D0A1100710662 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279911256D0A1100710662 /* RealmManager.swift */; };
+		56279914256D106100710662 /* RealmDiaryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279913256D106100710662 /* RealmDiaryManager.swift */; };
+		56279917256D147A00710662 /* MyDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279916256D147A00710662 /* MyDiaryViewController.swift */; };
+		56279919256D15DD00710662 /* EditDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279918256D15DD00710662 /* EditDiaryViewController.swift */; };
+		5627991E256D168700710662 /* MyDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627991C256D168600710662 /* MyDiaryCell.swift */; };
+		5627991F256D168700710662 /* MyDiaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5627991D256D168700710662 /* MyDiaryCell.xib */; };
+		56279921256D18DF00710662 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279920256D18DF00710662 /* Reachability.swift */; };
+		56279923256D1B2300710662 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56279922256D1B2300710662 /* Localizable.strings */; };
+		56279925256D1B6E00710662 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279924256D1B6E00710662 /* Alert+Extension.swift */; };
+		56279929256D208000710662 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279928256D208000710662 /* Array+Extension.swift */; };
+		5627992D256D20ED00710662 /* MyDiaryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627992B256D20ED00710662 /* MyDiaryHeader.swift */; };
+		5627992E256D20ED00710662 /* MyDiaryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5627992C256D20ED00710662 /* MyDiaryHeader.xib */; };
+		56279931256D21AC00710662 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56279930256D21AC00710662 /* Icons.xcassets */; };
+		56279933256D233300710662 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56279932256D233300710662 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A92CA23D94502766AE1E891 /* Pods_MyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351A8972F24ECA6BCD07C0EF /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		4B1C1658BA2286804ACBC48C /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
 		562798E1256CC8F800710662 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562798E4256CC8F800710662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		562798E6256CC8F800710662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		562798E8256CC8F800710662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		562798EB256CC8F800710662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		562798ED256CC8FD00710662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562798F0256CC8FD00710662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562798F2256CC8FD00710662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		562798FA256CCFD200710662 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		562798FD256CDE3200710662 /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
+		562798FF256CDE5000710662 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		56279901256CE8C500710662 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		56279903256CEA5200710662 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		56279905256CECC300710662 /* RealmDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDiary.swift; sourceTree = "<group>"; };
+		56279907256D034600710662 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		5627990D256D052300710662 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		5627990F256D086500710662 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		56279911256D0A1100710662 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		56279913256D106100710662 /* RealmDiaryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDiaryManager.swift; sourceTree = "<group>"; };
+		56279916256D147A00710662 /* MyDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryViewController.swift; sourceTree = "<group>"; };
+		56279918256D15DD00710662 /* EditDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDiaryViewController.swift; sourceTree = "<group>"; };
+		5627991C256D168600710662 /* MyDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryCell.swift; sourceTree = "<group>"; };
+		5627991D256D168700710662 /* MyDiaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDiaryCell.xib; sourceTree = "<group>"; };
+		56279920256D18DF00710662 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		56279922256D1B2300710662 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		56279924256D1B6E00710662 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
+		56279928256D208000710662 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		5627992B256D20ED00710662 /* MyDiaryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryHeader.swift; sourceTree = "<group>"; };
+		5627992C256D20ED00710662 /* MyDiaryHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDiaryHeader.xib; sourceTree = "<group>"; };
+		56279930256D21AC00710662 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		56279932256D233300710662 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7EA565EE4C87802310D32E /* Pods_MyDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4619E855D3AACE0843D9E822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				351A8972F24ECA6BCD07C0EF /* Pods-MyDiary.debug.xcconfig */,
+				4B1C1658BA2286804ACBC48C /* Pods-MyDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		562798D8256CC8F800710662 = {
 			isa = PBXGroup;
 			children = (
+				562798FA256CCFD200710662 /* R.generated.swift */,
 				562798E3256CC8F800710662 /* MyDiary */,
 				562798E2256CC8F800710662 /* Products */,
+				4619E855D3AACE0843D9E822 /* Pods */,
+				A441DDED33D21E605FAA1952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +115,115 @@
 		562798E3256CC8F800710662 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				5627991A256D166600710662 /* UITableViewCells */,
+				562798FC256CDE1F00710662 /* Helper */,
+				562798F8256CCA9F00710662 /* Storyboard */,
 				562798E4256CC8F800710662 /* AppDelegate.swift */,
-				562798E6256CC8F800710662 /* SceneDelegate.swift */,
-				562798E8256CC8F800710662 /* ViewController.swift */,
-				562798EA256CC8F800710662 /* Main.storyboard */,
-				562798ED256CC8FD00710662 /* Assets.xcassets */,
-				562798EF256CC8FD00710662 /* LaunchScreen.storyboard */,
+				56279915256D145700710662 /* ViewControllers */,
+				5627992F256D218C00710662 /* Resources */,
 				562798F2256CC8FD00710662 /* Info.plist */,
 			);
 			path = MyDiary;
+			sourceTree = "<group>";
+		};
+		562798F8256CCA9F00710662 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				562798EA256CC8F800710662 /* Main.storyboard */,
+				562798EF256CC8FD00710662 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		562798FC256CDE1F00710662 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				56279926256D1DEB00710662 /* Realm */,
+				56279927256D1DFE00710662 /* Extensions */,
+				562798FD256CDE3200710662 /* CommonStruct.swift */,
+				562798FF256CDE5000710662 /* Constant.swift */,
+				56279901256CE8C500710662 /* APIManager.swift */,
+				56279903256CEA5200710662 /* Enum.swift */,
+				56279907256D034600710662 /* CommonFunctions.swift */,
+				56279920256D18DF00710662 /* Reachability.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		56279915256D145700710662 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56279916256D147A00710662 /* MyDiaryViewController.swift */,
+				56279918256D15DD00710662 /* EditDiaryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5627991A256D166600710662 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5627992A256D20DB00710662 /* MyDiaryHeader */,
+				5627991B256D167000710662 /* MyDiaryCell */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		5627991B256D167000710662 /* MyDiaryCell */ = {
+			isa = PBXGroup;
+			children = (
+				5627991C256D168600710662 /* MyDiaryCell.swift */,
+				5627991D256D168700710662 /* MyDiaryCell.xib */,
+			);
+			path = MyDiaryCell;
+			sourceTree = "<group>";
+		};
+		56279926256D1DEB00710662 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				56279905256CECC300710662 /* RealmDiary.swift */,
+				56279911256D0A1100710662 /* RealmManager.swift */,
+				56279913256D106100710662 /* RealmDiaryManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		56279927256D1DFE00710662 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5627990D256D052300710662 /* Date+Extension.swift */,
+				5627990F256D086500710662 /* String+Extension.swift */,
+				56279924256D1B6E00710662 /* Alert+Extension.swift */,
+				56279928256D208000710662 /* Array+Extension.swift */,
+				56279932256D233300710662 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5627992A256D20DB00710662 /* MyDiaryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				5627992B256D20ED00710662 /* MyDiaryHeader.swift */,
+				5627992C256D20ED00710662 /* MyDiaryHeader.xib */,
+			);
+			path = MyDiaryHeader;
+			sourceTree = "<group>";
+		};
+		5627992F256D218C00710662 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56279930256D21AC00710662 /* Icons.xcassets */,
+				562798ED256CC8FD00710662 /* Assets.xcassets */,
+				56279922256D1B2300710662 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A441DDED33D21E605FAA1952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A92CA23D94502766AE1E891 /* Pods_MyDiary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 562798F5256CC8FD00710662 /* Build configuration list for PBXNativeTarget "MyDiary" */;
 			buildPhases = (
+				30BF5A003EE523DA265BB895 /* [CP] Check Pods Manifest.lock */,
+				562798F9256CCED200710662 /* ShellScript */,
 				562798DD256CC8F800710662 /* Sources */,
 				562798DE256CC8F800710662 /* Frameworks */,
 				562798DF256CC8F800710662 /* Resources */,
+				71C74078E59F048F8EA2DAF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +287,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56279923256D1B2300710662 /* Localizable.strings in Resources */,
 				562798F1256CC8FD00710662 /* LaunchScreen.storyboard in Resources */,
+				56279931256D21AC00710662 /* Icons.xcassets in Resources */,
+				5627992E256D20ED00710662 /* MyDiaryHeader.xib in Resources */,
 				562798EE256CC8FD00710662 /* Assets.xcassets in Resources */,
 				562798EC256CC8F800710662 /* Main.storyboard in Resources */,
+				5627991F256D168700710662 /* MyDiaryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30BF5A003EE523DA265BB895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562798F9256CCED200710662 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		71C74078E59F048F8EA2DAF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDiary/Pods-MyDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDiary/Pods-MyDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDiary/Pods-MyDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		562798DD256CC8F800710662 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				562798E9256CC8F800710662 /* ViewController.swift in Sources */,
+				56279917256D147A00710662 /* MyDiaryViewController.swift in Sources */,
+				56279908256D034600710662 /* CommonFunctions.swift in Sources */,
+				56279910256D086500710662 /* String+Extension.swift in Sources */,
+				56279902256CE8C500710662 /* APIManager.swift in Sources */,
 				562798E5256CC8F800710662 /* AppDelegate.swift in Sources */,
-				562798E7256CC8F800710662 /* SceneDelegate.swift in Sources */,
+				56279921256D18DF00710662 /* Reachability.swift in Sources */,
+				56279912256D0A1100710662 /* RealmManager.swift in Sources */,
+				56279900256CDE5000710662 /* Constant.swift in Sources */,
+				5627990E256D052300710662 /* Date+Extension.swift in Sources */,
+				5627992D256D20ED00710662 /* MyDiaryHeader.swift in Sources */,
+				56279919256D15DD00710662 /* EditDiaryViewController.swift in Sources */,
+				56279929256D208000710662 /* Array+Extension.swift in Sources */,
+				56279904256CEA5200710662 /* Enum.swift in Sources */,
+				5627991E256D168700710662 /* MyDiaryCell.swift in Sources */,
+				56279933256D233300710662 /* UIView+Extension.swift in Sources */,
+				56279906256CECC300710662 /* RealmDiary.swift in Sources */,
+				562798FB256CCFD200710662 /* R.generated.swift in Sources */,
+				562798FE256CDE3200710662 /* CommonStruct.swift in Sources */,
+				56279925256D1B6E00710662 /* Alert+Extension.swift in Sources */,
+				56279914256D106100710662 /* RealmDiaryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,10 +526,12 @@
 		};
 		562798F6256CC8FD00710662 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351A8972F24ECA6BCD07C0EF /* Pods-MyDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +545,12 @@
 		};
 		562798F7256CC8FD00710662 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1C1658BA2286804ACBC48C /* Pods-MyDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MyDiary
+
+  Created by Hardik on 24/11/20.
+  Copyright © 2020 MyDiary. All rights reserved.
+*/
+
+"Internet_error" = "Unable to contact the server";
+
+"Somenthing_wrong_error_message" = "Someting went wrong, Please try after some time.";
+
+"title_empty" = "Please enter title";
+
+"content_empty" = "Please enter content";
